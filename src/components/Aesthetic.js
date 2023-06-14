@@ -21,9 +21,9 @@ const Aesthetic = ({ numberOfImages }) => {
   }, [numberOfImages]);
 
   return (
-    <div>
+    <div className='aesthetic-div'>
       {imageUrls.map((url, index) => (
-        <img key={index} src={url} alt={`Image ${index}`} style={{ width: '10vw', height: '10vh' }} />
+        <img className='aesthetic-imgs' key={index} src={url} alt={`Image ${index}`} />
       ))}
     </div>
   );

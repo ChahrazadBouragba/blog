@@ -1,10 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 .Blog {
   display: flex;
-  gap: 3rem;
+  border: 1px solid red;
 }
 .post1 {
   display: flex;
   flex-direction: column;
+}
 
+.post--wrapper {
+  padding: 3rem 0;
+  background: #51735b36;
+}
+
+.post--container {
+  /* border: 1px solid #7d7e848c; */
+  width: 60%;
+  padding: 3.3rem 0;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  background-color: white;
+    box-shadow: 0 0 5px rgba(81, 115, 91, 0.397);
+}
+.intro--imgDiv {
+  justify-self: center;
+  margin: 0 auto;
+  width: 82%;
+  /* border: 1px solid red; */
+}
+
+.intro--img {
+  width: 100%;
+  border-radius: 15px;
+}
+.intro--input {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  /* border: 1px solid red; */
+  justify-content: center;
+  margin-top: 2.3rem;
+}
+.small-profile {
+  border-radius: 800px;
+  width: 4rem;
+  height: 3rem;
+}
+input {
+  outline: none;
+  border-radius: 40px;
+  text-indent: 10px;
+  border: 1px solid #7d7e848c;
+  background-color: #f5f5f5;
+  width: 70%;
+  background-image: url(../src/img/search.png);
+  background-repeat: no-repeat;
+  background-position-x:30cqmax;
+  background-position-y: center;
+  background-size: 1.5rem;
+
+}
+
+.aesthetic-div {
+ 
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 82%;
+}
+.aesthetic-imgs {
+  width: 32%;
+  margin-left: 4px;
+  /* border-radius: 15px; */
+  transition: transform 0.3s ease;
+
+}
+.aesthetic-imgs :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 15px;
 
 }
