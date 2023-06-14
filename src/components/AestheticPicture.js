@@ -26,9 +26,9 @@ function AestheticPicture({ numberOfPictures }) {
   };
 
   return (
-    <div>
+    <div className='contetnt-wrapper'>
       {imageUrls.map((imageUrl, index) => (
-        <img key={index} src={imageUrl} alt={`Aesthetic ${index}`} />
+        <img className='aesthetic-imgs' key={index} src={imageUrl} alt={`Aesthetic ${index}`} />
       ))}
     </div>
   );

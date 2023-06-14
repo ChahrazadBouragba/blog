@@ -37,13 +37,27 @@ function Quotations({ numberOfQuotes }) {
     <div>
       {quotes.map((quote, index) => (
         <div key={index}>
-          <div>Quote: {quote.content}</div>
-          <div>Author: {quote.author}</div>
+          <div className='contetnt-wrapper'>
+            <p className="slug">{quote.authorSlug}</p>
+            <p className="date">{quote.dateModified}</p>
+          <div className="quote--content">
+          <blockquote>
+              <h3>
+                <span> &ldquo;</span> 
+                {quote.content}
+                 <span>&rdquo; </span>
+                </h3>
+            </blockquote>
+            <p className="author">  -  {quote.author}</p>
+          </div>
+          <p className="tag">&#x2022; {quote.tags.join(", ")} &#x2022;</p>
+          </div>
+          {/* <div>Author: {quote.author}</div>
           <div>Author Slug: {quote.authorSlug}</div>
           <div>Date Added: {quote.dateAdded}</div>
           <div>Date Modified: {quote.dateModified}</div>
-          <div>Tags: {quote.tags.join(", ")}</div>
-          <hr />
+          <div>Tags: {quote.tags.join(", ")}</div> */}
+          {/* <hr /> */}
         </div>
       ))}
     </div>

@@ -7,7 +7,7 @@ import profile from '../img/profilw8.jpg'
 export default function Firstpost() {
     return (
         <div className="post--container">
-            <div className='intro--imgDiv'>
+            <div className='contetnt-wrapper'>
             <img className='intro--img' src={image}></img>
             </div>
 
