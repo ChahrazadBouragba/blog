@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Aside from "./Aside";
 
 function AestheticPicture({ numberOfPictures }) {
   const [imageUrls, setImageUrls] = useState([]);
@@ -10,12 +11,14 @@ function AestheticPicture({ numberOfPictures }) {
 
   const fetchAestheticPictures = async () => {
     try {
-      const requests = Array.from({ length: numberOfPictures }, (_, index) =>
-        axios.get(`https://picsum.photos/seed/${index}/200/200`)
-      );
-
-      const responses = await Promise.all(requests);
-      const urls = responses.map((response) => response.request.responseURL);
+      const urls = [];
+      for (let i = 0; i < numberOfPictures; i++) {
+        const randomId = Math.floor(Math.random() * 1000); // Generate a random ID
+        const response = await axios.get(
+          `https://picsum.photos/id/${randomId}/200/200`
+        );
+        urls.push(response.request.responseURL);
+      }
       setImageUrls(urls);
     } catch (error) {
       console.error(error);
