@@ -7,17 +7,59 @@
 
 .Blog {
   display: flex;
-  border: 1px solid red;
+  /* grid-template-columns: 30%, 70%; */
   font-family: 'Public Sans', sans-serif;
 }
-.post1 {
+
+aside {
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh; /* set the height to 100% of the viewport height */
+  background-color: white;
+  width: 44rem;
+
+}
+.aside-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  margin-top: 5rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.profile--img {
+
+  border-radius: 50px;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 2rem;
+}
+.description {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+button {
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 0;
+  width: 7rem;
+  border-radius: 15rem;
+  outline: none;
 }
 
 .post--wrapper {
   padding: 3rem 0;
   background: #51735b36;
+  grid-column: 2;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid red;  */
+  /* width: 70%; */
+
 }
 
 .post--container {
@@ -35,6 +77,7 @@
   width: 82%;
   align-items: center;
   /* border: 1px solid red; */
+  transition: transform 0.3s ease;
 }
 
 .intro--img {
@@ -54,20 +97,20 @@
 .small-profile {
   border-radius: 800px;
   width: 4rem;
-  height: 3rem;
+  height: 4rem;
 }
 input {
   outline: none;
   border-radius: 40px;
-  text-indent: 10px;
+  text-indent: 17px;
   border: 1px solid #7d7e848c;
   background-color: #f5f5f5;
   width: 70%;
-  background-image: url(../src/img/search.png);
+  /* background-image: url(../src/img/search.png);
   background-repeat: no-repeat;
   background-position-x:30cqmax;
   background-position-y: center;
-  background-size: 1.5rem;
+  background-size: 1.5rem; */
 
 }
 
@@ -115,7 +158,6 @@ blockquote {
 
   span {
     font-weight: 900;
-    font-size: 1.5rem;
     color: rgba(81, 115, 91, 0.8);
   }
   .author {
@@ -125,6 +167,22 @@ blockquote {
   }
 
   .aesthetic-column {
+    width: 48%;
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+  }
+  .images {
+    transition: transform 0.3s ease;
     width: 100%;
   }
 
+  .aesthetic-column:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+.images:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  border-radius: 15px;
+}
