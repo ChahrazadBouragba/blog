@@ -25,7 +25,11 @@ function App() {
           </div>
 
           <div className="post--container">
-          <AestheticPicture  numberOfPictures={9}/>
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+          <div className="post--container">
+          <AestheticPicture  numberOfPictures={3}/>
           </div>
           
           <div className="post--container">
@@ -33,16 +37,56 @@ function App() {
           </div>
 
           <div className="post--container">
+            <AestheticPicture  numberOfPictures={6}/>
             <Quotations numberOfQuotes={1}/>
-            <AestheticPicture  numberOfPictures={3}/>
           </div>
 
           <div className="post--container">
-          <AestheticPicture  numberOfPictures={6}/>
+            <AestheticPicture  numberOfPictures={6}/>
           </div>
 
           <div className="post--container">
-          <Aesthetic  numberOfPictures={5}/>
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+          <div className="post--container">
+            <Images numberOfImages={5}/>
+          </div>
+
+          {/* <div className="post--container">
+            <Aesthetic  numberOfImages={4}/>
+          </div> */}
+
+          <div className="post--container">
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+
+          <div className="post--container">
+            <AestheticPicture  numberOfPictures={6}/>
+          </div>
+
+          <div className="post--container">
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+          <div className="post--container">
+            {/* <Aesthetic  numberOfImages={2}/> */}
+            <Images numberOfImages={3}/>
+          </div>
+
+          <div className="post--container">
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+          <div className="post--container">
+            <Images numberOfImages={1}/>
+            <Quotations numberOfQuotes={1}/>
+          </div>
+
+          <div className="post--container">
+          <AestheticPicture  numberOfPictures={12}/>
+          <Quotations numberOfQuotes={1}/>
           </div>
       </div>
 

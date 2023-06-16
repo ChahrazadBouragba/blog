@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function Images({ numberOfImages }) {
 //   const URL = "https://api.escuelajs.co/api/v1/products";
-const URL = "https://api.escuelajs.co/api/v1/users";
+const URL = "https://api.escuelajs.co/api/v1/products";
   const [images, setImages] = useState([]);
 
   // Function to fetch images from the API
@@ -24,11 +24,11 @@ const URL = "https://api.escuelajs.co/api/v1/users";
   }, [numberOfImages]);
 
   return (
-    <div>
+    <div className='contetnt-wrapper'>
       {images.map((image, index) => {
         return (
-          <div key={index}>
-            <img src={image.avatar} alt={`Image ${index}`} />
+          <div  key={index}>
+            <img className="images" src={image.images} alt={`Image ${index}`} />
           </div>
         );
       })}

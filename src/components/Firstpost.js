@@ -1,5 +1,5 @@
-import image from '../img/for9.jpg';
-import profile from '../img/profilw8.jpg'
+import image from '../img/00.jpg';
+import profile from '../img/for3.jpg'
 
 
 
@@ -11,10 +11,10 @@ export default function Firstpost() {
             <img className='intro--img' src={image}></img>
             </div>
 
-            <div className='intro--input'>
+            <form className='intro--input'>
                 <img className='small-profile' src={profile}></img>
                 <input  type="text" placeholder='What are you looking for?'></input>
-            </div>
+            </form>
         </div>
     )
 }
