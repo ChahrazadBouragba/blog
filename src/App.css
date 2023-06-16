@@ -85,6 +85,7 @@ button {
   /* border: 1px solid #7d7e848c; */
   width: 60%;
   padding: 3.3rem 0;
+  padding-bottom: 2rem;
   margin: 0 auto;
   margin-bottom: 2rem;
   border-radius: 15px;
@@ -106,6 +107,7 @@ button {
 }
 .intro--input {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   margin: 0 auto;
   width: 80%;
@@ -134,7 +136,31 @@ input {
   background-size: 1.5rem; */
 
 }
+.reactions-div {
+  display: flex;
+  gap: 0.5rem;
+  /* border: 1px solid red; */
+  justify-content: end;
+  width: 90%;
+  margin-top: 2rem;
+}
+.reaction {
+  width: 1.2rem;
+}
 
+.reaction-container {
+  /* width: 30%; */
+  /* border: 1px solid red; */
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reaction-container:hover {
+  background-color: #7d7e848c;
+  border-radius: 100%;
+}
 .aesthetic-imgs {
   width: 32%;
   margin-left: 4px;
